@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="45dp"
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp"
+    tools:context="com.cs401.ilegal.ilegal.MainActivity"
+    android:background="@drawable/nightsky"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ILegalSelfHelp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily = "sans-serif"
+            android:textSize="30dp"
+            android:layout_marginLeft="100dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legal Aid Made Easy"
+            android:textColor="#549Fe5"
+            android:textSize="10dp"
+            android:layout_marginLeft="170dp"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/login_button"
+        android:layout_gravity="center_horizontal"
+
+        android:background="#5497e5"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+
+        android:layout_marginTop="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="Create Account"
+
+            android:textColor="#5497e5"
+            android:id="@+id/create_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="Forgot Password"
+
+            android:textColor="#5497e5"
+            android:id="@+id/forgot_password"/>
+    </LinearLayout>
+
+</LinearLayout>

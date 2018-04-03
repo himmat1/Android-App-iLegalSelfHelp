@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/calm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        tools:context=".CreateAccountActivity"
+
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_name"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="First Name"
+                android:layout_weight="1" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/last_name"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Last Name"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Confirm Password"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_line_1"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Address Line 1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_line_2"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Address Line 2" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="City" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/state"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/states"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postal_code"
+            android:layout_gravity="center_horizontal"
+
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Postal Code" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="14"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_of_birth"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Date of Birth"
+            android:editable="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/license_number"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="License Number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/sign_up_button"
+            android:layout_gravity="center_horizontal"
+            android:background="#2aa942"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/background_light"/>
+    </LinearLayout>
+
+</ScrollView>
